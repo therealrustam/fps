@@ -34,10 +34,13 @@ def main():
 
 if __name__ == "__main__":
     startfile('pno0001.exe')
+    sleep(15)
+    pydirectinput.press('f11')
     screen = pyautogui.screenshot('screenshot.png')
     sleep(30)
     pydirectinput.press('enter', presses=2)
     pydirectinput.keyDown('w')
+    pydirectinput.press('f11')
     sleep(20)
     screen = pyautogui.screenshot('screenshot1.png')
     for proc in process_iter():
